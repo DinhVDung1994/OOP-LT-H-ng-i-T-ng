@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+// let sum=0;
+// let numbers=+(prompt('Nhap gia tri cua mang'))
+// let ar=new Array(numbers);
+// for (let i=0;i<numbers;i++){
+//     ar[i]=+prompt('Nhap Phan tu thu '+(i+1));
+//      sum=sum+ar[i];
+// }
+//
+// // function tinhTONG(arr){
+// //     let sum =0;
+// //     for (let i =0;i<arr.length;i++){
+// //         sum+=arr[i];
+// //     }console.log(sum);
+// // }
+// // tinhTONG(ar);
+// console.log(ar);
+// console.log(sum);
+// let arrA=[17,28,30];
+// let arrB=[99,16,8];
+// let countA=0;
+// let countB =0;
+//
+// for (let i =0;i<a.length;i++){
+//     if (arrA[i]>arrB[i]){
+//         countA++;
+//     }else if (arrA[i]<arrB[i]){
+//         countB++;
+//     }
+// }
+// console.log(countA,countB);
+//
+// let ar = [1000000001,1000000002,1000000003,1000000004,1000000005]
+// let sum=0;
+// for (let i =0;i<ar.length;i++){
+//     sum=sum+ar[i];
+// }
+// TÍNH HIỆU TRỊ TUYỆT ĐỐI CỦA 2 ĐƯỜNG CHÉO TRONG MA TRẬN VUÔNG
+// let arr=[
+//     [1,2,3],
+//     [4,5,6],
+//     [9,8,9]]
+//     let sum1=0;
+//     for (let i=0;i<arr.length;i++){
+//         for (let j=0;j<arr[i].length;j++){
+//             if (i===j){
+//                 sum1=sum1+arr[i][j];
+//                 console.log(arr[i][j])
+//             }
+//         }
+//     }console.log(sum1);
+// TÍNH TỔNG MINIMAXSUM  https://www.hackerrank.com/challenges/mini-max-sum/problem
+//     let arr=[7,69,2,221,8974]
+//     let sumMax=0;
+//     let sumMin=0;
+// arr.sort(function (a,b){return a-b})
+// console.log(arr)
+//     for (let i=1;i<arr.length;i++){
+//         sumMax+=arr[i];
+//     }console.log(sumMax);
+//     for (let i=0;i<arr.length-1;i++){
+//         sumMin+=arr[i];
+//     }console.log(sumMin)
+// let ar=[sumMin+' '+sumMax];
+//     console.log(ar);
+// // CODE VẼ CẦU THANG BẰNG # CĂN LỀ PHẢIhttps://www.hackerrank.com/challenges/staircase/problem
+ let n=parseInt(prompt('Nhập N'))
+    for (let i=1;i<=n;i++){
+    for (let x=n;x>i;x--){
+        document.write("&nbsp&nbsp")
+    }
+      for (let j=1;j<=i;j++){
+     document.write('#')
+     }
+      document.write('<br>')
+}
+// VẼ TAM GIÁC VUÔNG CĂN LỀ PHẢI GÓC VUÔNG BÊN TRÊN
+// for (let i=0;i<n;i++){
+//     for (let j=0;j<n;j++){
+//         if (j<i){
+//             document.write('&nbsp&nbsp');
+//         }else {
+//             document.write('*');
+//         }
+//     }
+//     document.write('<br>')
+// }
+
+
+</script>
+</body>
+</html>
