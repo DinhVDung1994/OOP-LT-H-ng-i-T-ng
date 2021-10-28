@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a974a449-8107-422e-a810-0188722f33d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/[Thực Hành]Funny cỉcles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Canvas HCN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Bài tập]Xây dựng lớp mô tả hình chữ nhật.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,7 +64,8 @@
       <workItem from="1635343834064" duration="3259000" />
       <workItem from="1635350792554" duration="2675000" />
       <workItem from="1635384454479" duration="3935000" />
-      <workItem from="1635388925198" duration="480000" />
+      <workItem from="1635388925198" duration="5724000" />
+      <workItem from="1635403170761" duration="4240000" />
     </task>
     <servers />
   </component>

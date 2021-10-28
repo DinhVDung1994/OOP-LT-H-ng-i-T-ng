@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="700px" height="500px" style="border: 1px solid black"></canvas>
+</body>
+<script>
+   class Rectangle{
+       long;
+       short;
+       area;
+       perimeter;
+       display;
+
+       constructor(long,short,area,perimeter,display) {
+           this.long = long;
+           this.short = short;
+           this.area = long * short;
+           this.perimeter = (long + short) * 2;
+       }
+
+       getLong(){
+           return this.long;
+       }
+       getShort(){
+           return this.short;
+       }
+       getArea(){
+           return this.area;
+       }
+       getPerimeter(){
+           return this.perimeter;
+       }
+
+
+       setLong(){
+           this.long=long;
+       }
+       setShort(){
+          this.short=short;
+       }
+       setArea(){
+           this.area=area;
+       }
+       setPerimeter(){
+           this.perimeter=perimeter;
+       }
+
+   }
+   let a1=new Rectangle(100,50);
+
+   let area1 =a1.getArea();
+   let perimeter1=a1.getPerimeter();
+
+    document.write('Diện Tích: '+area1+' và Chu Vi: '+perimeter1);
+
+   let ctx = document.getElementById('myCanvas').getContext('2d');
+   ctx.beginPath();
+   ctx.rect(100,100,200,100);// vẽ HCN tại vị trí cách trên cách trai 100px và có chiều dài 200 rộng 100
+   ctx.fillStyle="red";// đổ màu cho hình theo màu lựa chọn
+   ctx.stroke()// vẽ đường viền
+   ctx.fill();// đổ màu hình mặc định màu đen
+
+
+</script>
+</html>
