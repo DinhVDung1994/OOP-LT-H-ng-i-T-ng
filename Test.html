@@ -45,20 +45,31 @@
 // }
 // TÍNH HIỆU TRỊ TUYỆT ĐỐI CỦA 2 ĐƯỜNG CHÉO TRONG MA TRẬN VUÔNG
 // let arr=[
-//     [1,2,3],
+//     [11,2,4],
 //     [4,5,6],
-//     [9,8,9]]
-//     let sum1=0;
+//     [10,8,-12]]
+// let sum1=0;
+// let sum2 =0;
+// let hieuTong=0;
 //     for (let i=0;i<arr.length;i++){
 //         for (let j=0;j<arr[i].length;j++){
 //             if (i===j){
 //                 sum1=sum1+arr[i][j];
-//                 console.log(arr[i][j])
+//
 //             }
 //         }
-//     }console.log(sum1);
-// TÍNH TỔNG MINIMAXSUM  https://www.hackerrank.com/challenges/mini-max-sum/problem
-//     let arr=[7,69,2,221,8974]
+//         for (let k =0;k<arr.length;k++){
+//             if (i+k===arr.length-1){
+//                 sum2=sum2+arr[i][k];
+//
+//             }
+//         }
+//    }hieuTong=Math.abs(sum1-sum2);
+//     console.log(hieuTong);
+    // console.log(sum1);
+    // console.log(sum2);
+//TÍNH TỔNG MINIMAXSUM  https://www.hackerrank.com/challenges/mini-max-sum/problem
+ //   let arr=[7,69,2,221,8974]
 //     let sumMax=0;
 //     let sumMin=0;
 // arr.sort(function (a,b){return a-b})
@@ -72,16 +83,20 @@
 // let ar=[sumMin+' '+sumMax];
 //     console.log(ar);
 // // CODE VẼ CẦU THANG BẰNG # CĂN LỀ PHẢIhttps://www.hackerrank.com/challenges/staircase/problem
- let n=parseInt(prompt('Nhập N'))
-    for (let i=1;i<=n;i++){
-    for (let x=n;x>i;x--){
-        document.write("&nbsp&nbsp")
-    }
-      for (let j=1;j<=i;j++){
-     document.write('#')
-     }
-      document.write('<br>')
-}
+//     let n=parseInt(prompt('Nhập N'))
+//     let data = '#';
+//     let spaces = '&nbsp&nbsp';
+//     let xuongDong = '<br>';
+//
+//     for (let i=1;i<=n;i++){
+//     for (let x=n;x>i;x--){
+//         document.write(spaces);
+//     }
+//       for (let j=1;j<=i;j++){
+//         document.write(data);
+//      }
+//       document.write(xuongDong);
+// }
 // VẼ TAM GIÁC VUÔNG CĂN LỀ PHẢI GÓC VUÔNG BÊN TRÊN
 // for (let i=0;i<n;i++){
 //     for (let j=0;j<n;j++){
@@ -93,6 +108,136 @@
 //     }
 //     document.write('<br>')
 // }
+//
+// Tìm SỐ LẦN XUẤT HIỆN CỦA SỐ LỚN NHẤT TRONG MẢNG
+// let arr = [4,5,8,9,9,6,7,9,1];
+//     let counts=0;
+//     let max;
+//     max=arr[0];
+//     for (let i=0;i<arr.length;i++){
+//         if (max===arr[i]){
+//             counts++;
+//         }else if (max<arr[i]){
+//             max=arr[i];
+//         }
+//     }document.write(' Số Lần xuất hiện là: '+counts)
+//     ĐẾM GIÁ TRỊ ÂM GIÁ TRỊ DƯƠNG VÀ SỐ 0 TRONG MẢNG VÀ TÍNH TỈ LỆ
+//     let arr = [4,-5,8,9,-9,6,7,-9,1,0,0];
+//     let countAm=0;
+//     let countDuong=0;
+//     let count0=0;
+//     for (let i=0;i<arr.length;i++){
+//         if (arr[i]>0){
+//             countDuong++;
+//         }else if (arr[i]<0){
+//             countAm++;
+//         }else if (arr[i]===0){
+//             count0++;
+//         }
+//     }console.log((countDuong/arr.length).toFixed(6));
+// console.log((countAm/arr.length).toFixed(6));
+// console.log((count0/arr.length).toFixed(6));
+
+
+// TÌM GIÁ TRỊ LỚN NHẤT SO VỚI GIÁ TRỊ ĐƯA RA KHI MUA HÀNG
+//
+// let b= parseInt(prompt('Nhập Giá Trị'))
+//     // let keyboards=[5]
+//     // let drives=[4]
+// let keyboards=[5,6,9,7]
+// let drives=[4,3,5]
+//     let garden =[];
+// let garden1 =[];
+//
+// for (let i=0;i<keyboards.length;i++){
+//     for (let j=0;j<drives.length;j++){
+//         garden.push(keyboards[i]+drives[j])
+//     }
+// }
+// for (let i=0;i<garden.length;i++){
+//     if (garden[i]>b){
+//         console.log('-1')
+//     }else if (garden[i]<=b){
+//         garden1.push(garden[i])
+//     }console.log(garden1)
+// }
+
+// let keyboards=[5,6,9]
+// let drives=[4,11,6]
+//
+// let data='-1';
+// let garden=[];
+// for (let i =0;i<keyboards.length;i++){
+//     for (let j=0;j<drives.length;j++){
+//         let max=garden[0];
+//         if (keyboards[i]+drives[j]<=b){
+//             garden.push(keyboards[i]+drives[j])
+//             console.log(garden)
+//
+//             for (let i =0;i<garden.length;i++){
+//                 if (max<garden[i]){
+//                     max=garden[i];
+//                 }
+//             }console.log(max);
+//         }else  if(keyboards[i]+drives[j]>b){
+//                 console.log(data) ;
+//
+//         }
+//     }
+// }
+
+
+//console.log(38%5)
+///  Grading Students////////////////////////////
+//
+// let grades=[73,67,38,33]
+//
+// let rem;
+// for (let i =0;i<grades.length;i++) {
+//     if (grades[i] >= 38) {
+//         rem = grades[i] % 5;
+//         if (rem >= 3) {
+//             grades[i] = grades[i] + 5 - rem;
+//         }
+//     }
+// }console.log(grades)
+
+
+////////////////TÁO VÀ CAM TRONG SÂN NHÀ/////////////////
+// let app = [-2,2,1]
+// let org = [5,-6]
+// let a= 5;
+// let b=15;
+// let s = 7;
+// let t = 11;
+// let countA=0;
+// let countB=0;
+//
+// for (let i=0;i<app.length;i++){
+//     if (s<=(app[i]+a)&&(app[i]+a)<=t){
+//         countA++;
+//     }
+// }
+// for (let j=0;j<org.length;j++){
+//     if (s<=(org[j]+b)&&(org[j]+b)<=t){
+//         countB++;
+//     }
+// }
+// console.log(countA)
+// console.log(countB)
+
+let x1=21;
+let v1=6;
+let x2=47;
+let v2=3;
+
+
+if (v1>v2 && (x2-x1)%(v1-v2)===0){
+     console.log('YES');
+}else {
+    console.log('NO');
+}
+
 
 
 </script>

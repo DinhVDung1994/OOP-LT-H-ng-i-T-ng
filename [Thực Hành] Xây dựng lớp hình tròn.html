@@ -6,8 +6,48 @@
 </head>
 <body>
 <script>
+class Circle {
+    radius;
+    areas;
+    constructor(radius,areas){
+        this.radius=radius;
+        this.areas= (Math.PI*radius*radius).toFixed(4);
+    }
+    getRadius(){
+        return this.radius;
+    }
+    setRadius(){
+        this.radius=radius;
+    }
+    getArea(){
+        return this.areas;
+    }
+    setArea(){
+        this.areas=areas;
+    }
+}
+let circle = new Circle(2);
+let circle1 = new Circle(4);
+let circle2 = new Circle(5);
+let circle3 = new Circle(6);
+let circle4 = new Circle(7);
 
 
+let radius = circle.getRadius();
+let areas = circle.getArea();
+let radius1 = circle1.getRadius();
+let areas1 = circle1.getArea()
+let radius2 = circle2.getRadius();
+let areas2 = circle2.getArea()
+let radius3 = circle3.getRadius();
+let areas3 = circle3.getArea()
+let radius4 = circle4.getRadius();
+let areas4 = circle4.getArea()
+alert('radius'+radius+'; area: '+areas);
+document.write('radius'+radius1+'; area: '+areas1+'<br>');
+document.write('radius'+radius2+'; area: '+areas2+'<br>');
+document.write('radius'+radius3+'; area: '+areas3+'<br>');
+document.write('radius'+radius4+'; area: '+areas4+'<br>');
 
 </script>
 </body>
