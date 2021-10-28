@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<canvas id="myCanvas" width="500px" height="500px" style="border: 1px solid black"></canvas>
+</body>
+<script>
+    function Circle(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+    function getRamdomHex(){
+        return Math.floor(Math.random()*255);
+    }
+    function getRamdomColor(){//ramdom color cho hình tròn và gọi hàm bằng fillStyle=<biến gọi hàm>
+        let red =getRamdomHex();
+        let green = getRamdomHex();
+        let blue = getRamdomHex();
+        return "rgb(" +red+","+blue+","+green+")";
+    }
+    function createCircle(){
+        let ctx = document.getElementById('myCanvas').getContext('2d')
+        let radius = Math.floor(Math.random()*80);
+        let color = getRamdomColor();
+        let x = Math.random()*window.innerWidth;
+        let y = Math.random()*window.innerHeight;
+        // innerWidth và innerHeight trả về kích thước của cửa sổ trình duyệt
+        let circle =new Circle(x,y,radius);
+        ctx.beginPath();
+        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.fillStyle=color;
+        ctx.fill();
+    }
+    function createMultipleCircle(){
+        for (let i=0;i<50;i++){
+            createCircle();
+        }
+    }
+    createMultipleCircle();
+</script>
+</html>
